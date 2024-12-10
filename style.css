@@ -1,24 +1,17 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: rgba(255, 255, 255, 0.866);
     color: white;
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
 }
-
-
-/* #main{
-    display: flex;
-
-} */
 
 .nav {
     display: flex;
     height: 6px;
-    /* background-color: rgb(215, 36, 36); */
     justify-content: space-between;
     margin: 20px;
     padding: 10px;
@@ -28,11 +21,9 @@ body {
 .nav .logo img {
     height: 30px;
     width: 30px;
-
 }
 
 .nav .logo span {
-    background-color: rgba(223, 74, 74, 0);
     font-size: 39px;
     color: #111;
 }
@@ -46,7 +37,6 @@ body {
     margin-top: 12px;
     height: 30px;
     width: 30px;
-
 }
 
 .hamburger-button {
@@ -74,84 +64,77 @@ body {
     background-color: #111;
 }
 
-#landingPage{
+#landingPage {
     display: flex;
     justify-content: center;
     flex-direction: column;
-align-items:flex-start;
-
+    align-items: flex-start;
     color: white;
     height: 82vh;
-    background-image: url(https://images.unsplash.com/photo-1552044173-20b284c6fe1f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
+    background-image: url('https://images.unsplash.com/photo-1552044173-20b284c6fe1f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-size: 100%,100%;
     z-index: 10;
-    mix-blend-mode:normal;
+    mix-blend-mode: normal;
 }
 
-#landingPage h1{
+#landingPage h1 {
     margin: 10px;
     font-size: 80px;
 }
-#landingPage p{
+
+#landingPage p {
     margin: 10px;
     font-size: 21px;
-    display: flex   ;
+    display: flex;
     align-items: center;
     width: 600px;
-    justify-content: center ;
-
+    justify-content: center;
 }
 
-#landingPage  button{
-    margin
-    :20px;
+#landingPage button {
+    margin: 20px;
     padding: 10px;
     font-size: 18px;
-    background:transparent;
+    background: transparent;
     color: white;
     border-radius: 20px;
     border: 2px solid white;
-
-    
 }
 
-#section1{
+#section1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin:50px;
+    margin: 50px;
     height: 200px;
-    margin-top: 40px;
     color: black;
 }
 
-#section1 .part1 p{
+#section1 .part1 p {
     font-size: 21px;
 }
-#section1 .part1 h2{
-    
+
+#section1 .part1 h2 {
     font-size: 39px;
-    
 }
-#section1 .part2{
+
+#section1 .part2 {
     font-size: 21px;
     width: 600px;
-
 }
 
-#section2{
+#section2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 40px;
     padding: 20px;
-    
 }
-#section2 p{
+
+#section2 p {
     border: 1px solid white;
     height: 300px;
     color: rgb(255, 255, 255);
@@ -163,10 +146,10 @@ align-items:flex-start;
     font-size: 20px;
     font-weight: 800;
     padding: 20px;
-
 }
-#section3{
-    background-image: url(https://images.unsplash.com/photo-1494368308039-ed3393a402a4?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+#section3 {
+    background-image: url('https://images.unsplash.com/photo-1494368308039-ed3393a402a4?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -178,24 +161,62 @@ align-items:flex-start;
     align-items: flex-end;
     mix-blend-mode: luminosity;
 }
-#section3 h2{
+
+#section3 h2 {
     margin-left: 100px;
     font-size: 45px;
     width: 50%;
-    
 }
-#section3 p{
-    /* margin-left: 100px; */
+
+#section3 p {
     width: 50%;
     font-size: 20px;
     margin-top: 20px;
-
-    
 }
-#section3 button{
+
+#section3 button {
     padding: 10px;
     width: 50%;
     margin-top: 20px;
-    
 }
 
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #landingPage h1 {
+        font-size: 50px;
+    }
+
+    #landingPage p {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    #section1 {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    #section1 .part2 {
+        width: 90%;
+    }
+
+    #section2 {
+        flex-direction: column;
+    }
+
+    #section2 p {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    #section3 h2,
+    #section3 p,
+    #section3 button {
+        width: 90%;
+        font-size: 16px;
+        text-align: center;
+    }
+}
